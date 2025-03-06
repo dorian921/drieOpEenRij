@@ -62,10 +62,8 @@ class Triangle extends Figure {
   public function draw() {
     $points = "0,{$this->height} {$this->width},{$this->height} " . ($this->width / 2) . ",0";
         
-    // Output the SVG for the triangle
-    echo  '<svg width="' . $this->width . '" height="' . $this->height . '"> 
-            <polygon points="' . $points . '" fill="' . $this->color . '" />
-          </svg>';
+    
+    echo  '<svg width="' . $this->width . '" height="' . $this->height . '"> <polygon points="' . $points . '" fill="' . $this->color . '" /> </svg>';
  }
 
 }
